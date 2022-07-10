@@ -103,30 +103,45 @@
 
 
 		//-------------------------------------------- NAV -------------------------------------------------------------------------------
-/* 
-        $(document).click(function(){
-        	$('header nav li').removeClass('selected');
-        })
-*/
-
-        if( $('header nav ul li ul').length) {
+        
+		if( $('header nav ul li ul').length) {
         	$('header nav ul li ul').parents('li').addClass('hasChild');
         }
 
 
-		
-		$('header nav li').on('click', function(){
-			$('header nav li').removeClass('selected');
-			
-			//var self = $(this);
-			store.selected = this.children[0].innerHTML;
-			$(this).toggleClass('selected');
+        $('body').on('click', (function(e){
+			if (true) {
+				//console.log('777', this);
+				//$('header nav li').removeClass('selected');
+			}
+        }))
 
-			console.log(store.selected);
+
+		
+		$('header nav ul li').on('click', function(){
+
+			if (store.selected !== this.children[0].children[0].innerHTML) {
+				$('header nav ul li').removeClass('selected');
+				$(this).addClass('selected');
+			} else {
+
+			}
+
+			console.log(this);
+
+			store.selected = this.children[0].children[0].innerHTML;
+			event. stopPropagation();
+
+
 		});
 
+/*
+		$('nav-search selected').on('click', function(){
+			console.log('111');
+			$(this).removeClass('selected');
+		});
 
-
+*/
 
 
 
