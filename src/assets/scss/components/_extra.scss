@@ -1,0 +1,65 @@
+.article-contain h2 {
+display: block;
+font-size: 1.5em;
+margin-block-start: 0.83em;
+margin-block-end: 0.83em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+.article-contain h3, .article-contain h4 {
+    margin: 15px 0;
+    font-size: 1.52941em;
+    line-height: 1.07692em;
+    font-weight: bold;
+}
+
+.article-contain h3, .article-contain h4 {
+    margin: 15px 0;
+    font-size: 1.4em;
+    line-height: 1.07692em;
+    font-weight: bold;
+}
+
+.article-contain  p {
+    padding-top:10px;
+}
+
+.article-contain blockquote {
+  border-left: 3px solid #eee;
+  color: #1a1a1a;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25em;
+  font-style: italic;
+  line-height: 1.8em;
+  margin: 1.1em -0.5em;
+  padding: 1em 2em;
+  position: relative;
+  transition: 0.2s border ease-in-out;
+  z-index: 0;
+}
+.article-contain blockquote:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  height: 2em;
+  background-color: #fff;
+  width: 5px;
+  margin-top: -1em;
+}
+.article-contain blockquote:after {
+  content: "\f35f";
+  position: absolute;
+  top: 50%;
+  left: -0.5em;
+  color: #eee;
+  font-family: "Ionicons";
+  font-style: normal;
+  line-height: 1em;
+  text-align: center;
+  text-indent: -2px;
+  width: 1em;
+  margin-top: -0.5em;
+  transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
+}

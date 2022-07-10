@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2E3192" offset="0%"></stop>
+            <stop stop-color="#00AEEF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Article-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Techlicious-ArticlePage-1.1" transform="translate(-400.000000, -5116.000000)">
+            <g id="Group-22" transform="translate(400.000000, 5116.000000)">
+                <g id="Group-23">
+                    <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="56" height="56"></rect>
+                    <g id="Icon-24px" transform="translate(21.000000, 21.000000)" fill="#FFFFFF">
+                        <path d="M0.25,1.75 L0.25,12.25 C0.25,13.075 0.9175,13.75 1.75,13.75 L12.25,13.75 C13.075,13.75 13.75,13.075 13.75,12.25 L13.75,1.75 C13.75,0.925 13.075,0.25 12.25,0.25 L1.75,0.25 C0.9175,0.25 0.25,0.925 0.25,1.75 L0.25,1.75 Z M9.25,4.75 C9.25,5.995 8.245,7 7,7 C5.755,7 4.75,5.995 4.75,4.75 C4.75,3.505 5.755,2.5 7,2.5 C8.245,2.5 9.25,3.505 9.25,4.75 L9.25,4.75 Z M2.5,10.75 C2.5,9.25 5.5,8.425 7,8.425 C8.5,8.425 11.5,9.25 11.5,10.75 L11.5,11.5 L2.5,11.5 L2.5,10.75 L2.5,10.75 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

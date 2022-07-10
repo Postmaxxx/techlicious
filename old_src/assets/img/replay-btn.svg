@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="19px" viewBox="0 0 79 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Article-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Techlicious-ArticlePage-1.1" transform="translate(-1112.000000, -5138.000000)">
+            <g id="Group-17" transform="translate(1112.000000, 5138.000000)">
+                <g id="Group-22">
+                    <rect id="Rectangle" fill="#D0D0D0" x="0" y="0" width="79" height="19"></rect>
+                    <text id="Reply" font-family="Helvetica" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="15" y="13">REPLY</tspan>
+                    </text>
+                    <g id="ic_reply" transform="translate(57.000000, 9.000000) scale(-1, 1) translate(-57.000000, -9.000000) translate(50.000000, 2.000000)">
+                        <g id="Icon-24px">
+                            <path d="M5.83333333,5.25 L5.83333333,2.91666667 L1.75,7 L5.83333333,11.0833333 L5.83333333,8.69166667 C8.75,8.69166667 10.7916667,9.625 12.25,11.6666667 C11.6666667,8.75 9.91666667,5.83333333 5.83333333,5.25 L5.83333333,5.25 Z" id="Shape" fill="#FFFFFF"></path>
+                            <polygon id="Shape" points="0 0 14 0 14 14 0 14"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

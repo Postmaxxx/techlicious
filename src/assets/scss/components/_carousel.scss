@@ -1,0 +1,37 @@
+.owl-carousel {
+	.owl-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 25px;
+
+		.owl-dot {
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #DEDEDE;
+			opacity: 0.5;
+			margin: 0 4px;
+
+			&.active {
+				background: $light-blue;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.top-section-slider {
+	.owl-dots {
+		margin: 0;
+		position: absolute;
+		bottom: 3rem;
+		width: 100%;
+		text-align: center;
+
+		.owl-dot {
+			&.active { background: white; }
+		}
+	}
+}

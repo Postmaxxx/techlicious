@@ -1,0 +1,239 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'Blog' %}
+
+{% block content %}
+
+  {% include "partials/_header.html" %}
+
+ <main>
+  	<div class="ad-block my-12 text-center max-w-screen-sm mx-auto px-4 xl:px-0">
+    	<img src="../../assets/img/ad-img.jpg" alt="advertising">
+    </div>
+
+    <div class="container mx-auto px-4 xl:px-0">
+	    <section class="content-wrap mb-10 md:mb-32 flex flex-wrap md:flex-no-wrap">
+	    	<div class="info-block w-full md:w-3/4 md:pr-7">
+	    		<div class="info-inner-block bg-white">
+	    			<div class="flex flex-col px-2 md:px-7 pt-10 ">
+	    				<p class="uppercase text-blue-light font-bold text-2xl mb-4 md:mb-6">news</p>
+
+	    				<h1 class="text-gray-dark font-bold text-2xl md:text-40 mb-4 leading-8 md:leading-10">Adobe Uses AI to Deliver Professionally Edited Photos & Video with a Click</h1>
+
+	    				<div class="author-info flex items-center mb-8">
+	    					<img src="" alt="" class="w-12 h-12 mr-4">
+	    					<p class="inline-flex flex-wrap sm:flex-no-wrap">
+		    					<span class="text-gray-light text-sm sm:text-base mr-0 mb-2 sm:mb-0 sm:mr-2">by <a href="" class="text-blue-light underline hover:no-underline">Elizabeth Harper</a></span>
+		    					<span class="date sm:pl-4 relative text-gray-light text-base">October 03, 2019</span>
+		    				</p>
+	    				</div>
+
+	    				<p class="text-sm text-gray-light">Techlicious editors independently review products.</p>
+						<p class="text-sm text-gray-light">To help support our mission, we may earn affiliate commissions from links contained on this page.</p>
+	    			</div>
+
+	    			<div class="article-contain mt-8 mb-16">
+	    				{% include "components/_imageBlock.html" %}
+
+	    				<div class="text-wrap px-2 md:px-7 my-10">
+	    					<p>Our smartphones make it simple to capture photos and videos wherever we are — but making more than simple edits can be complicated (or even intimidating). Adobe Photoshop Elements and Premiere Elements change that, offering tools that give you professional results that don’t need professional knowledge.</p>
+
+							<p>Last year, Adobe’s Elements lineup added easy-to-apply, automated effects, and this year the company has doubled down on the effort with <a href="#">Adobe Photoshop Elements 2020</a> and Premiere Elements 2020. Adobe Sensei AI makes painstaking editing tasks take just one-click, while guided edits walk you through customizing your photos and videos. It’s editing that’s available for everyone, with results that really impress.</p>
+	    				</div>
+
+	    				{% include "components/_imageBlock.html" %}
+
+	    				<div class="text-wrap px-2 md:px-7 my-10">
+	    					<p>For image editing, <a href="#">Photoshop Elements 2020</a> has some powerful new editing tools. It can automatically:</p>
+
+	    					<ul>
+								<li>Select subjects with a single click, letting you easily modify the background to add depth effects or make colors pop.</li>
+								<li>Remove objects, so you can focus on the subject of the photo.This would be a time-consuming task if done by hand, but the automatic results are stunning.</li>
+								<li>Turn black and white photos into color photos.</li>
+								<li>Smooth out skin imperfections, lessening acne or wrinkles so everyone looks their best. And while this might sound like something that would mangle your photos, the results look completely natural.</li>
+								<li>Add patterns like hearts or stars to your photo with a simple swipe of the mouse — while leaving the subject of your photo untouched, if that’s the effect you’re looking for.</li>
+	    					</ul>
+
+							<p>While these effects are automated, simple options let you modify them to get your photos to look just right — but even the defaults look great.</p>
+
+							<p>To show you the possibilities, the Sensei AI automatically selects the best images and edits, which it shows on your home screen. You can be delighted by the results it’s come up with automatically or set about creating your own. And if you’d rather not mess with any automation, Photoshop Elements still has all of the manual image editing tools you need for your DIY projects.</p>
+
+							<p>Also new this year is integration with FUJIFILM Prints & Gifts, letting you turn your images into decorative item, from large canvas prints to phone cases. There are more than 140 options, all available right inside Photoshop Elements.</p>
+	    				</div>
+
+	    				<img src="../assets/img/article-img.jpeg" alt="" class="full">
+
+	    				<div class="text-wrap px-2 md:px-7 my-10">
+							<p>For video, Premiere Elements 2020 also offers new automated effects powered by Sensei AI. It can automatically reduce noise in your videos, making those grainy, low-light videos look crisp and professional. It can also add a couple of neat effects to your photos: animating skies in the background and creating time-lapse videos out of your photos. And for those that like to take vertical videos, there's a new tool that provides blurred-out filler video on the sides to fill the more traditional horizontal frame.</p>
+							<p>But the most impressive improvements are in organization. Premiere Elements can now recognize faces in videos, letting you browse by who’s in each video. It will also automatically tag your videos based on the subject. It will just take a single click to find photos of family, friends or pets, but it will also organize pictures into categories like birthdays or sunsets. Photoshop Elements already this kind of intelligent organization, and it’s handy to have it extended to our videos.</p>
+							<p>Adobe Photoshop Elements 2020 and Adobe Premiere Elements 2020 for $99.99 each or $149.99 if you’d like to buy both (check prices on Amazon). If you’re upgrading, it’s a little cheaper: $79.99 for one, or $119.99 for both.</p>
+							<p>[Image credit: Adobe]</p>
+	    				</div>
+
+	    			</div>
+
+	    			<div class="about-author flex flex-wrap sm:flex-no-wrap pt-12 mb-12 px-2 md:px-7" style='border-top: 1px solid #d0d0d0;'>
+	    				<div class="left-part flex-shrink-0 flex sm:w-1/3 mb-4 sm:mb-0">
+	    					<p class="author-img w-10 h-10 rounded-full mr-3 overflow-hidden">
+	    						<img src="../../assets/img/author-photo.jpeg" alt="">
+	    					</p>
+	    					<p class="author-info">
+	    						<span class="name block text-base font-bold">Author name</span>
+	    						<span class="position text-base">Author</span>
+	    						<span class="social-media flex">
+	    							<a href="#" class="fb inline-flex text-white items-center justify-center bg-blue-darker w-4 h-4 mr-2">
+				    					<svg class="fill-current" style="width: 10px; height:10px;">
+												<use xlink:href="#facebook-icon"></use>
+											</svg>
+	    							</a>
+	    							<a href="#" class="twitter inline-flex text-white items-center justify-center bg-blue-dark w-4 h-4 mr-2">
+				    					<svg class="fill-current" style="width: 10px; height:15px;">
+												<use xlink:href="#twitter-icon"></use>
+											</svg>
+	    							</a>
+	    						</span>
+	    					</p>
+	    				</div>
+
+	    				<div class="right-part sm:w-2/3">
+	    					<p class="info font-light">Lianna’s greatest dream is to make your customers pause, smile and click (in that order). She does this through irresistible emails and shockingly effective landing pages. Conquer campaigns with her at Punchline Copy or get quick copy jobs done at SNAP Copy .</p>
+	    				</div>
+	    			</div>
+
+	    			<div class="share-btn-wrap pt-4 pb-5 px-2 md:px-7 flex items-center flex-wrap sm:flex-no-wrap sm:justify-end">
+	    				<span class="text-base text-gray-dark mr-4 block sm:inline-block mb-2 sm:mb-0">Share</span>
+	    				<p class="flex">
+		    				<a href="#" class='inline-flex ml-0 mr-3 sm:mx-3 text-white items-center justify-center w-8 h-8 bg-red'>
+		    					<svg class="fill-current" style="width: 20px; height:20px;">
+									<use xlink:href="#email-icon"></use>
+								</svg>
+		    				</a>
+		    				<a href="#" class='inline-flex mx-3 text-white items-center justify-center w-8 h-8 bg-blue-dark'>
+		    					<svg class="fill-current" style="width: 17px; height:15px;">
+									<use xlink:href="#twitter-icon"></use>
+								</svg>
+		    				</a>
+		    				<a href="#" class='inline-flex mx-3 text-white items-center justify-center w-8 h-8 bg-blue-darker'>
+		    					<svg class="fill-current" style="width: 10px; height:20px;">
+									<use xlink:href="#facebook-icon"></use>
+								</svg>
+		    				</a>
+		    				<a href="#" class='inline-flex mx-3 text-white items-center justify-center w-8 h-8 bg-gray-light-2'>
+		    					<svg class="fill-current" style="width: 21px; height:21px;">
+									<use xlink:href="#add-icon"></use>
+								</svg>
+		    				</a>
+		    			</p>
+	    			</div>
+	    		</div>
+
+	    		<div class="posts-pagination my-5 md:my-7">
+	    			<div class="pagination-wrap flex justify-between flex-wrap md:flex-no-wrap">
+	    				<div class="item md:pt-5 md:pb-8 md:px-7 md:bg-white w-2/5 lg:w-72 max-w-full relative">
+	    					<a href="#" class="text-base uppercase text-blue-light flex md:mb-4 items-center">
+	    					  	<svg class="fill-current mr-1" style="width: 4px; height:7px;">
+									<use xlink:href="#arrow-left-icon"></use>
+								</svg>
+	    						Previous
+	    					</a>
+	    					<p class="post-title w-40 max-w-full text-base font-bold leading-5 hidden md:block">Roku Software Update Makes Watching Easier</p>
+
+	    					<a href="#" class="coverFull"></a>
+	    				</div>
+
+	    				<div class="item md:pt-5 md:pb-8 md:px-7 md:bg-white w-2/5 lg:w-72 max-w-full text-right relative">
+	    					<a href="#" class="text-base uppercase text-blue-light flex md:mb-4 items-center justify-end">
+	    						Next
+	    					  	<svg class="fill-current ml-1" style="width: 4px; height:7px;">
+									<use xlink:href="#arrow-right-icon"></use>
+								</svg>
+	    					</a>
+	    					<p class="post-title w-40 max-w-full text-base font-bold leading-5 ml-auto hidden md:block">Roku Software Update Makes Watching Easier</p>
+
+	    					<a href="#" class="coverFull"></a>
+	    				</div>	    			
+	    			</div>
+	    		</div>
+
+	    		<div class="relatid-products bg-white pt-8 pb-10 px-2 sm:px-6 mb-6">
+	    			<h2 class="text-base font-bold mb-5">Shop Realted Products</h2>
+	    			<div class="slider-wrap owl-carousel flex md:justify-between flex-wrap md:flex-no-wrap">
+	    				{% for i in 0..3 %}
+	    					<div class="md:w-40 mb-4 md:mb-0">
+	    						<img src="../../assets/img/related-prod.jpeg" alt="">
+	    					</div>
+	    				{% endfor %}
+	    			</div>
+
+	    			<p class="flex justify-end mt-4"><img src="../../assets/img/add-small.jpg" alt="advertising" class="w-20"></p>
+	    		</div>
+
+	    		<div class="other-products-wrap bg-white pt-8 pb-10 px-2 sm:px-6 mb-6">
+	    			<h2 class="text-base font-bold mb-5">You May Like</h2>
+
+	    			<div class="other-products owl-carousel flex flex-wrap">
+	    				{% for i in 0..7 %}
+	    					<div class="w-40 mb-6 mx-5">
+	    						<p class="img-wrap mb-3">
+	    							<img src="../../assets/img/item-img.jpeg" alt="">
+	    						</p>
+	    						<h3 class="text-lg text-gray-dark font-bold leading-snug">10 Superfoods That Can Boost Your Health</h3>
+	    						<p class="text-gray-light text-xs">ChairFood</p>
+	    					</div>
+	    				{% endfor %}
+	    			</div>
+	    		</div>
+
+	    		{% include "partials/_comments.html" %}
+	    		{% include "partials/_comments-form.html" %}
+	    	</div>
+
+	    	<aside class="sidebar w-full md:w-1/4 mt-6 md:mt-0">
+	    		<div class="ad-block">
+	    			<img src="../../assets/img/add-review.jpeg" alt="advertising">
+	    		</div>
+
+	    		<div class="recent-reviews-wra none sm:block px-6 py-8 bg-white mt-8 mb-8">
+	    			<h2 class='uppercase text-blue-light text-2xl mb-6 font-bold'>Recent Reviews</h2>
+
+	    			<div class="reviews-inner">
+
+	    				{% for i in 0..3 %}
+		    				<div class="items flex flex-wrap lg:flex-no-wrap mb-6">
+		    					<img src="../assets/img/heidi-sandstrom-H4fYXZ1hyco-unsplash@2x.jpg" alt="" class="flex-grow-0 lg:mr-4 w-24 h-24 mb-2 lg: mb-0">
+
+		    					<div class="text-part">
+		    						<h4 class="font-bold text-sm lg:text-base text-black mb-1 leading-tight">Google Maps Can Now Warn You When Your Bus Is Overcrowded</h4>
+
+		    						<p class="review-block flex">
+				    					{% for i in 0..1 %}
+							    				<svg class="fill-current mr-2 text-blue-light mr-2" style="width: 10px; height:10px;">
+													<use xlink:href="#full-star-icon"></use>
+												</svg>
+
+												<svg class="fill-current mr-2 text-blue-light mr-2" style="width: 10px; height:10px;">
+													<use xlink:href="#half-star-icon"></use>
+												</svg>
+							    			
+							    			<svg class="fill-current mr-2 text-blue-light mr-2" style="width: 10px; height:10px;">
+													<use xlink:href="#empty-star-icon"></use>
+												</svg>
+											{% endfor %}
+										</p>
+		    					</div>
+		    				</div>
+		    			{% endfor %}
+	    			</div>
+	    		</div>
+
+	    		<div class="ad-video-block sticky">
+	    			<img src="../../assets/img/video-block.png" alt="">
+	    		</div>
+	    	</aside>
+	    </section>
+	</div>
+  </main>
+
+  {% include "partials/_footer.html" %}
+
+{% endblock %}

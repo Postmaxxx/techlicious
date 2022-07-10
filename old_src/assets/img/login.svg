@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="215px" height="35px" viewBox="0 0 215 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Article-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Techlicious-ArticlePage-1.1" transform="translate(-401.000000, -5662.000000)">
+            <g id="Group-4" transform="translate(401.000000, 5662.000000)">
+                <rect id="Rectangle-Copy-4" fill="#3367C4" x="0" y="0" width="215" height="34"></rect>
+                <path d="M18.4570259,25 L18.4570259,17.8 L20.6429546,17.8 L21,14.6 L18.4570259,14.6 L18.4570259,13.0416 C18.4570259,12.2176 18.4780744,11.4 19.6295069,11.4 L20.7957513,11.4 L20.7957513,9.112 C20.7957513,9.0776 19.7939973,9 18.7805496,9 C16.6640031,9 15.3387254,10.3256 15.3387254,12.76 L15.3387254,14.6 L13,14.6 L13,17.8 L15.3387254,17.8 L15.3387254,25 L18.4570259,25 Z" id="facebook-[#176]" fill="#FFFFFF"></path>
+                <text id="Login-with-Facebook" font-family="Helvetica" font-size="16" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="51" y="21">Login with Facebook</tspan>
+                </text>
+                <path d="M33.5,0 L33.5,34.1402099" id="Path-5" stroke="#FFFFFF" opacity="0.327473958"></path>
+            </g>
+        </g>
+    </g>
+</svg>

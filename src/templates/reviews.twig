@@ -1,0 +1,82 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'Reviews Title' %}
+
+{% block content %}
+
+  {% include "partials/_header.html" %}
+
+  <main>
+  	<div class="ad-block my-12 text-center max-w-screen-sm mx-auto px-4 xl:px-0">
+    	<img src="../../assets/img/ad-img.jpg" alt="advertising">
+    </div>
+
+    {% include "partials/_author-block.html" %}
+
+    <div class="container mx-auto px-4 xl:px-0">
+	    <section class="content-wrap mb-8 md:mb-32 flex flex-wrap md:flex-no-wrap">
+	    	<div class="info-block w-full md:w-3/4 md:pr-7">
+	    		<div class="info-inner-block bg-white px-4 md:px-7 pt-10 pb-10 md:pb-20">
+	    			<div class="flex md:justify-between mb-8 md:mb-10 flex-wrap md:flex-no-wrap">
+	    				<h1 class="uppercase text-blue-light font-bold text-2xl w-full md:w-auto mb-2 md:mb0">Reviews</h1>
+
+	    				<p class="text-base text-black uppercase font-bold flex items-center">
+							<svg class="fill-current mr-2 text-blue-light" style="width: 15px; height:13px;">
+								<use xlink:href="#camera-icon"></use>
+							</svg>
+	    					Photos & Cameras
+	    				</p>
+	    			</div>
+
+	    			<div class="reviews-list flex flex-wrap justify-between">
+						{% for i in 0..11 %}
+			    			<div class="block-item mb-10">
+			    				<div class="img-block w-full h-40 md:h-48 bg-center bg-cover mb-4" style="background-image: url(../../assets/img/heidi-sandstrom-H4fYXZ1hyco-unsplash@2x.jpg)"></div>
+		    					<p class="review-block flex">
+				    				{% for i in 0..1 %}
+					    				<svg class="fill-current mr-2 text-blue-light mr-2" style="width: 16px; height:16px;">
+											<use xlink:href="#full-star-icon"></use>
+										</svg>
+
+											<svg class="fill-current mr-2 text-blue-light mr-2" style="width: 16px; height:16px;">
+												<use xlink:href="#half-star-icon"></use>
+											</svg>
+					    			
+					    			<svg class="fill-current mr-2 text-blue-light mr-2" style="width: 16px; height:16px;">
+											<use xlink:href="#empty-star-icon"></use>
+										</svg>
+									{% endfor %}
+								</p>
+
+				  	  			<div class="text-block w-full">
+				  	  				<h3 class="text-2xl font-bold mb-6 text-black leading-tight">Microsoft is Closing its Ebook Store and Deleting Your Ebooks</h3>
+
+				  	  				<p class="text-base font-light text-black leading-normal mb-5">It is a good idea to think of your PC as an office. It stores files, programs, pictures. This can be compared to an actual office’s files, machines and decorations. The operating system is the boss.</p>
+
+				  	  				<p class="by-name text-base font-light text-gray-light leading-normal flex items-center">
+				  	  					<span class="dash"></span>
+				  	  					by <a href="#" class="text-blue-light underline hover:no-underline ml-2">Elizabeth Harper</a>
+				  	  				</p>
+
+				  	  				<a href="#" class="read-more">Read story</a>
+				  	  			</div>  				
+			    			</div>
+			    		{% endfor %}	    			
+	    			</div>
+
+	    			{% include "components/_pagination.html" %}
+	    		</div>
+	    	</div>
+
+	    	<aside class="sidebar w-full md:w-1/4 mt-8 md:mt-0">
+	    		<div class="ad-block">
+	    			<img src="../../assets/img/add-review.jpeg" alt="advertising">
+	    		</div>
+	    	</aside>
+	    </section>
+	</div>
+  </main>
+
+  {% include "partials/_footer.html" %}
+
+{% endblock %}

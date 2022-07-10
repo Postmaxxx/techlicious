@@ -1,0 +1,10 @@
+/* Animations
+================================================== */
+
+.animated-card {
+  transition: $transitionEaseInOut;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}

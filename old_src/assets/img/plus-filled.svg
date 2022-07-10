@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Article-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Techlicious-ArticlePage-1.1" transform="translate(-1143.000000, -3678.000000)">
+            <g id="Group-5" transform="translate(923.000000, 3678.000000)">
+                <g id="Group-22" transform="translate(220.000000, 0.000000)">
+                    <rect id="Rectangle-Copy-5" fill="#BBBBBB" x="0" y="0" width="32" height="32"></rect>
+                    <g id="Icon-24px" transform="translate(6.000000, 5.000000)">
+                        <path d="M16.625,2.625 L4.375,2.625 C3.40375,2.625 2.625,3.4125 2.625,4.375 L2.625,16.625 C2.625,17.5875 3.40375,18.375 4.375,18.375 L16.625,18.375 C17.5875,18.375 18.375,17.5875 18.375,16.625 L18.375,4.375 C18.375,3.4125 17.5875,2.625 16.625,2.625 L16.625,2.625 Z M14.875,11.375 L11.375,11.375 L11.375,14.875 L9.625,14.875 L9.625,11.375 L6.125,11.375 L6.125,9.625 L9.625,9.625 L9.625,6.125 L11.375,6.125 L11.375,9.625 L14.875,9.625 L14.875,11.375 L14.875,11.375 Z" id="Shape" fill="#FFFFFF"></path>
+                        <polygon id="Shape" points="0 0 21 0 21 21 0 21"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

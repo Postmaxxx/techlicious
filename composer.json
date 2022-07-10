@@ -1,0 +1,47 @@
+{
+  "require": {
+    "clubstudioltd/craft-asset-rev": "6.0.2",
+    "craftcms/aws-s3": "1.2.11",
+    "craftcms/cms": "^3.6.4",
+    "craftcms/feed-me": "4.3.6",
+    "craftcms/redactor": "2.8.7",
+    "dukt/social": "^2.0",
+    "hybridinteractive/craft-position-fieldtype": "1.0.17",
+    "jimstrike/craft-siteimprove-cms-plugin": "^1.0",
+    "mmikkel/retcon": "^2.2",
+    "nystudio107/craft-imageoptimize": "^1.6.0",
+    "nystudio107/craft-minify": "^1.2.9",
+    "nystudio107/craft-seomatic": "^3.2.0",
+    "nystudio107/craft-typogrify": "^1.1",
+    "putyourlightson/craft-blitz": "^3.2.0",
+    "sebastianlenz/linkfield": "1.0.25",
+    "topshelfcraft/legacy-login": "^0.0.1",
+    "topshelfcraft/wordsmith": "^3.2.0",
+    "verbb/comments": "^1.8",
+    "verbb/super-table": "2.6.8",
+    "vlucas/phpdotenv": "^3.4.0",
+    "wrav/simplesharing": "^1.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-shell": "^2.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.2.5"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}

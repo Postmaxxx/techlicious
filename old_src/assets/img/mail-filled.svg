@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 21</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Article-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Techlicious-ArticlePage-1.1" transform="translate(-983.000000, -3678.000000)">
+            <g id="Group-5" transform="translate(923.000000, 3678.000000)">
+                <g id="ic_add_box" transform="translate(60.000000, 0.000000)">
+                    <g id="Group-21">
+                        <rect id="Rectangle" fill="#D0021B" x="0" y="0" width="32" height="32"></rect>
+                        <g id="ic_email" transform="translate(6.000000, 6.000000)">
+                            <g id="Icon-24px">
+                                <path d="M16.6666667,3.33333333 L3.33333333,3.33333333 C2.41666667,3.33333333 1.675,4.08333333 1.675,5 L1.66666667,15 C1.66666667,15.9166667 2.41666667,16.6666667 3.33333333,16.6666667 L16.6666667,16.6666667 C17.5833333,16.6666667 18.3333333,15.9166667 18.3333333,15 L18.3333333,5 C18.3333333,4.08333333 17.5833333,3.33333333 16.6666667,3.33333333 L16.6666667,3.33333333 Z M16.6666667,6.66666667 L10,10.8333333 L3.33333333,6.66666667 L3.33333333,5 L10,9.16666667 L16.6666667,5 L16.6666667,6.66666667 L16.6666667,6.66666667 Z" id="Shape" fill="#FFFFFF"></path>
+                                <polygon id="Shape" points="0 0 20 0 20 20 0 20"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
