@@ -104,11 +104,11 @@
 
 		//-------------------------------------------- NAV -------------------------------------------------------------------------------
         
-		if( $('header nav ul li ul').length) {
-        	$('header nav ul li ul').parents('li').addClass('hasChild');
+		if( $('header .desktop ul li ul').length) {
+        	$('header .desktop ul li ul').parents('li').addClass('hasChild');
         }
 
-
+/*
         $('body').on('click', (function(e){
 			if (true) {
 				//console.log('777', this);
@@ -116,32 +116,39 @@
 			}
         }))
 
-
+*/
 		
-		$('header nav ul li').on('click', function(){
+		$('header .desktop ul li div a').on('click', function(){
 
-			if (store.selected !== this.children[0].children[0].innerHTML) {
-				$('header nav ul li').removeClass('selected');
-				$(this).addClass('selected');
-			} else {
+			//console.log(this.innerHTML);
 
+			if (store.selected !== this.innerText) {
+				$('header .desktop ul li').removeClass('selected');
 			}
 
-			console.log(this);
+			$(this.parentNode.parentNode).toggleClass('selected');
 
-			store.selected = this.children[0].children[0].innerHTML;
+
+			store.selected = this.innerText;
 			event. stopPropagation();
 
 
 		});
 
-/*
-		$('nav-search selected').on('click', function(){
-			console.log('111');
-			$(this).removeClass('selected');
-		});
 
-*/
+
+
+		//-------------------------------------------- HAMBURGER NAV -------------------------------------------------------------------------------
+        
+		if( $('header .mobile ul li ul').length) {
+        	$('header .mobile ul li ul').parents('li').addClass('hasChild');
+        }
+
+
+        $('header .mobile button').on('click', (function(e){
+			$(this.parentNode).toggleClass('selected')
+        }))
+
 
 
 

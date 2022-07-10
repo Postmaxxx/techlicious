@@ -1,4 +1,4 @@
-<nav class="hidden md:flex">
+<nav class="desktop">
     <ul>
         <li>
             <div>
@@ -39,7 +39,7 @@
                         </li>
                     </ul>
                     <div>
-                        <button>See All</button>
+                        <a href="#">See All</a>
                     </div>
                 </div>
             </div>
@@ -98,14 +98,24 @@
 
         <li class="nav-search">
             <div>
-                <a>Search</a>
-                <img src="../assets/img/search-icon.svg" alt="Search">
-                <img src="../assets/img/search-icon_close.svg" alt="Search">
+                <a>
+                    Search
+                    <img src="../assets/img/search-icon.svg" alt="Search">
+                    <img src="../assets/img/search-icon_close.svg" alt="Search">
+                </a>
             </div>
             <div>
                 <div>
-                    <input type="text" placeholder="Search">
+                    <form action="/action_page.php" method="get">
 
+                    </form>
+                    
+                    <form action="/action_page.php" method="get" id="search-form">
+                        <input type="text" placeholder="Search" id="search-query" name="search-input">
+                        <button type="submit" form="search-form" value="Submit">
+                            <img src="../assets/img/search-icon-white.svg" alt="Search">
+                        </button>
+                    </form>
                 </div>
             </div>
         </li>
@@ -115,8 +125,45 @@
 </nav>
 
 
+<!-- =================================== HAMBURGER ========================================================= -->
+<nav class="mobile">
+    <button>
+        <img src="../assets/img/hamburger-icon.svg" alt="Menu">
+        <img src="../assets/img/search-icon_close.svg" alt="Close">
+    </button>
+    <ul>
+        fdhgd
+        
+        
+        <!--
+            <li class="nav-search">
+                <div>
+                    <a>
+                        Search7
+                        <img src="../assets/img/search-icon.svg" alt="Search">
+                        <img src="../assets/img/search-icon_close.svg" alt="Search">
+                    </a>
+                </div>
+                <div>
+                    <div>
+                        <form action="/action_page.php" method="get">
+    
+                        </form>
+                        
+                        <form action="/action_page.php" method="get" id="search-form">
+                            <input type="text" placeholder="Search" id="search-query" name="search-input">
+                            <button type="submit" form="search-form" value="Submit">
+                                <img src="../assets/img/search-icon-white.svg" alt="Search">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        -->
 
-
+        
+    </ul>
+</nav>
 
 
 <!-- <button class="subscribe h-45 leading-10 border border-solid border-blue-light text-center w-48 xl:w-56 max-w-full text-blue-light text-base uppercase hidden md:inline-block">Subscribe</button>

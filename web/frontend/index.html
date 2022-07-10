@@ -34,21 +34,21 @@
         	<use xlink:href="#close-icon"></use>
         </svg>
 	</button>	
-</section>      <section class="ad-block text-center py-3 px-4 xl:px-0  hidden md:block">
+</section>      <section class="ad-block text-center py-3 px-0  hidden md:block">
     <img src="../assets/img/top-ad.jpeg" alt="advertising">
   </section>
-  <header class="bg-gray-dark py-3 md:py-2">
+  <header class="bg-gray-dark py-3 sticky">
 
-    <div class="container mx-auto px-4 xl:px-0">
-      <div class="flex items-center justify-between md:flex-wrap lg:flex-no-wrap">
-        <a href="index.html" class="text-logo w-9 md:w-full lg:w-56 xl:w-64 md:text-center lg:text-left">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between flex-no-wrap">
+        <a href="index.html" class="text-logo w-64 flex-shrink-0">
           <h1>
             <span class="sr-only">Techlicious logo, the link leads to the main page of the site</span>
-            <img src="../assets/img/top-logo.png" alt="Techlicious logo" class="md:w-56 lg:w-full">
+            <img src="../assets/img/top-logo.png" alt="Techlicious logo" class="w-full">
             </h1>
         </a>
 
-        <nav class="hidden md:flex">
+        <nav class="desktop">
     <ul>
         <li>
             <div>
@@ -89,7 +89,7 @@
                         </li>
                     </ul>
                     <div>
-                        <button>See All</button>
+                        <a href="#">See All</a>
                     </div>
                 </div>
             </div>
@@ -148,14 +148,24 @@
 
         <li class="nav-search">
             <div>
-                <a>Search</a>
-                <img src="../assets/img/search-icon.svg" alt="Search">
-                <img src="../assets/img/search-icon_close.svg" alt="Search">
+                <a>
+                    Search
+                    <img src="../assets/img/search-icon.svg" alt="Search">
+                    <img src="../assets/img/search-icon_close.svg" alt="Search">
+                </a>
             </div>
             <div>
                 <div>
-                    <input type="text" placeholder="Search">
+                    <form action="/action_page.php" method="get">
 
+                    </form>
+                    
+                    <form action="/action_page.php" method="get" id="search-form">
+                        <input type="text" placeholder="Search" id="search-query" name="search-input">
+                        <button type="submit" form="search-form" value="Submit">
+                            <img src="../assets/img/search-icon-white.svg" alt="Search">
+                        </button>
+                    </form>
                 </div>
             </div>
         </li>
@@ -165,8 +175,45 @@
 </nav>
 
 
+<!-- =================================== HAMBURGER ========================================================= -->
+<nav class="mobile">
+    <button>
+        <img src="../assets/img/hamburger-icon.svg" alt="Menu">
+        <img src="../assets/img/search-icon_close.svg" alt="Close">
+    </button>
+    <ul>
+        fdhgd
+        
+        
+        <!--
+            <li class="nav-search">
+                <div>
+                    <a>
+                        Search7
+                        <img src="../assets/img/search-icon.svg" alt="Search">
+                        <img src="../assets/img/search-icon_close.svg" alt="Search">
+                    </a>
+                </div>
+                <div>
+                    <div>
+                        <form action="/action_page.php" method="get">
+    
+                        </form>
+                        
+                        <form action="/action_page.php" method="get" id="search-form">
+                            <input type="text" placeholder="Search" id="search-query" name="search-input">
+                            <button type="submit" form="search-form" value="Submit">
+                                <img src="../assets/img/search-icon-white.svg" alt="Search">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        -->
 
-
+        
+    </ul>
+</nav>
 
 
 <!-- <button class="subscribe h-45 leading-10 border border-solid border-blue-light text-center w-48 xl:w-56 max-w-full text-blue-light text-base uppercase hidden md:inline-block">Subscribe</button>
