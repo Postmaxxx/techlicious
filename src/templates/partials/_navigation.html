@@ -7,7 +7,7 @@
             <div>
                 <div>
                     <div>
-                        <h3>News</h3>
+                        <span>News</span>
                     </div>
                     <ul>
                         <li>
@@ -105,25 +105,74 @@
             <div>
                 <div>
                     <div>
-                        <h3>Reviews</h3>
+                        <span>Reviews</span>
                     </div>
                     <ul>
                         <li>
-                            <a href="#">21</a>
+                            <span>Category 21</span>
+                            <ul>
+                                <li>
+                                    <a href="https://google.com">First item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fourth item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fifth item 2</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">22</a>
+                            <span>Category 22</span>
+                            <ul>
+                                <li>
+                                    <a href="https://google.com">First item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second item 222</a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">23</a>
-                        </li>
-                        <li>
-                            <a href="#">24</a>
-                        </li>
-                        <li>
-                            <a href="#">25</a>
+                            <span>Category 23</span>
+                            <ul>
+                                <li>
+                                    <a href="https://google.com">First item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fourth item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fifth item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">26 item</a>
+                                </li>
+                                <li>
+                                    <a href="#">27 item</a>
+                                </li>
+                                <li>
+                                    <a href="#">28 item</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
+                    <div>
+                        <a href="#">See All</a>
+                    </div>
                 </div>
             </div>
         </li>
@@ -160,10 +209,6 @@
             </div>
             <div>
                 <div>
-                    <form action="/action_page.php" method="get">
-
-                    </form>
-                    
                     <form action="/action_page.php" method="get" id="search-form">
                         <input type="text" placeholder="Search" id="search-query" name="search-input">
                         <button type="submit" form="search-form" value="Submit">
@@ -185,10 +230,108 @@
         <img src="../assets/img/hamburger-icon.svg" alt="Menu">
         <img src="../assets/img/search-icon_close.svg" alt="Close">
     </button>
-    <ul>
-        fdhgd
+    <div>
+        <form action="/action_page.php" method="get" id="search-form">
+            <input type="text" placeholder="Search" id="search-query" name="search-input">
+            <button type="submit" form="search-form" value="Submit">
+                <img src="../assets/img/search-icon-white.svg" alt="Search">
+            </button>
+        </form>
+        <div class="mobile-menu">
+            <ul> <!-- main points -->
+                <li>
+                    <div>
+                        <span>News</span>
+                        <img src="../assets/img/arrow-down_blue.svg" alt="">
+                    </div>
+                    <div> <!-- subMenu -->
+                        <a href="#">See All</a>
+                        <span>Category 1</span>
+                        <ul>
+                            <li>
+                                <a href="#">First Item 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Item 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Item 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Fourth Item 1</a>
+                            </li>
+                        </ul>
+                        <span>Category 2</span>
+                        <ul>
+                            <li>
+                                <a href="#">First Item 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Item 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Item 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Fourth Item 2</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>Reviews</span>
+                        <img src="../assets/img/arrow-down_blue.svg" alt="">
+                    </div>
+                    <div> <!-- subMenu -->
+                        <a href="#">See All</a>
+                        <span>Category 21</span>
+                        <ul>
+                            <li>
+                                <a href="#">First Item 21</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Item 21</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Item 21</a>
+                            </li>
+                            <li>
+                                <a href="#">Fourth Item 21</a>
+                            </li>
+                        </ul>
+                        <span>Category 22</span>
+                        <ul>
+                            <li>
+                                <a href="#">First Item 22</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Item 22</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Item 22</a>
+                            </li>
+                            <li>
+                                <a href="#">Fourth Item 22</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>
+                            <a href="#">Top pics</a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
         
-        
+
+
         <!--
             <li class="nav-search">
                 <div>
@@ -216,7 +359,7 @@
         -->
 
         
-    </ul>
+    </div>
 </nav>
 
 

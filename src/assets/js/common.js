@@ -1,7 +1,8 @@
 (function ($) {
 
 	const store = {
-		selected: ''
+		selected: '',
+		mobileSelected: ''
 	}
 
 	$(document).ready(function(){
@@ -108,19 +109,8 @@
         	$('header .desktop ul li ul').parents('li').addClass('hasChild');
         }
 
-/*
-        $('body').on('click', (function(e){
-			if (true) {
-				//console.log('777', this);
-				//$('header nav li').removeClass('selected');
-			}
-        }))
-
-*/
 		
 		$('header .desktop ul li div a').on('click', function(){
-
-			//console.log(this.innerHTML);
 
 			if (store.selected !== this.innerText) {
 				$('header .desktop ul li').removeClass('selected');
@@ -150,8 +140,23 @@
         }))
 
 
+		$('header .mobile-menu ul li div').on('click', (function(e){
+			console.log(this.children[0].innerText);
+
+			if (store.mobileSelected !== this.children[0].innerText) {
+				$('header .mobile-menu ul li').removeClass('selected');
+			}
+
+			$(this.parentNode).toggleClass('selected');
 
 
+			store.mobileSelected = this.children[0].innerText;
+			event. stopPropagation();
+        }))
+
+
+
+		
 
 
 

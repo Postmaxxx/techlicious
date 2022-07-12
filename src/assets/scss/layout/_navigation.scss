@@ -5,6 +5,13 @@ header {
     z-index: 2000;
     position: relative;
     //border: 2px solid yellow;
+    font-family: "Lato";
+
+    & div:nth-of-type(1) {
+        @include respond-to(xl) {           
+            max-width: none;
+        }
+    }
 }
 
 header nav:nth-of-type(1) {
@@ -20,7 +27,7 @@ header nav:nth-of-type(1) {
         display: flex;
         height: 100%;
         list-style: none;
-        width: 70%;
+        width: 75%;
         margin-left: auto;
         justify-content: space-between;
 
@@ -67,6 +74,11 @@ header nav:nth-of-type(1) {
                     width: 0;
                     transition: $transitionAll;
                 }
+
+                & > a {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
             }
 
 
@@ -106,7 +118,7 @@ header nav:nth-of-type(1) {
                     top: 87px;
                     left: 0;
                     z-index: 1000;
-                    padding: 40px 40px;
+                    padding: 30px 40px;
 
                     @include respond-to(md) {           
                         top: 240px;
@@ -133,8 +145,9 @@ header nav:nth-of-type(1) {
                                 margin-left: 20px;
                             }
 
-                            & > h3 {
-                                font-size: 28px;
+                            & > span {
+                                font-size: 32px;
+                                letter-spacing: 0.2rem;
                                 color: #FFF;
                             }
                         }
@@ -142,7 +155,7 @@ header nav:nth-of-type(1) {
                         
                         & > ul {
                             border: 3px solid red;
-                            margin-top: 20px;
+                            margin-top: 30px;
                             //border: 2px solid $nav-blue;
                             width: 100%;
                             display: flex;
@@ -152,21 +165,31 @@ header nav:nth-of-type(1) {
                             & > li {
                                 //width: 25%;
                                 flex-grow: 1;
-                                margin-top: 15px;
-                                border: 2px solid blue;
+                                //margin-top: 15px;
+                                border: 2px solid yellow;
 
                                 & span {
                                     font-size: 20px;
+                                    text-transform: uppercase;
+                                    font-weight: 900;
+                                    letter-spacing: 0rem;
                                 }
 
-                                & a {
-                                    font-size: 20px;
+                                & > ul > li {
 
-                                    &:hover {
-                                        color: $nav-blue;
-                                        text-decoration: underline;
+                                    margin-top: 10px;
+
+                                    & a {
+                                        font-size: 20px;
+    
+                                        &:hover {
+                                            color: $nav-blue;
+                                            text-decoration: underline;
+                                        }
                                     }
+
                                 }
+
                             }
                         }
 
@@ -193,6 +216,7 @@ header nav:nth-of-type(1) {
                                 //display: flex;
                                 padding: 5px 20px;
                                 text-decoration: none;
+                                font-size: 20px;
 
                                 &:hover {
                                     text-decoration: underline;
@@ -292,6 +316,18 @@ header nav:nth-of-type(1) {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 //---------------------- HAMBURGER ------------------------------
 header nav:nth-of-type(2) {
     display: none;
@@ -301,18 +337,33 @@ header nav:nth-of-type(2) {
     margin-left: auto;
     justify-content: space-between;
     height: 60px;
+
     
     @include respond-to(xl) {           
         display: flex;
     }
 
+        
+    @include respond-to(sm) {           
+        height: 10vw;
+    }
+
+
     & > button {
         margin-left: auto;
         outline: 0;
+
+
+
         & > img:nth-of-type(1) {
             display: block;
             height: 25px;
             width: 30px;
+            
+            @include respond-to(sm) {           
+                height: 3vw;
+                width: 4vw;
+            }
         }
         
         & > img:nth-of-type(2) {
@@ -320,19 +371,32 @@ header nav:nth-of-type(2) {
             height: 25px;
             width: 25px;
             margin-right: 3px;
+
+            @include respond-to(sm) {           
+                height: 4vw;
+                width: 4vw;
+            }
         }
 
     }
 
 
-    & > ul {
+    & > div {
+        border: 3px solid yellow;
+        height: calc(100vh - 87px);
         display: none;
         width: 100%;
-        height: 100%;
-        position: fixed;
-        background-color: rgba(50,50,50,0.5);
+        position: absolute;
+        background-color: rgba(0,0,0,0.95);
         left: 0;
-        top: 150px;
+        top: 87px;
+        padding: 20px 16px;
+        overflow-y: scroll;
+
+        @include respond-to(sm) {           
+            padding: 4vw calc(2vw + 10px);
+        }
+
     }
 
     &.selected {
@@ -347,8 +411,224 @@ header nav:nth-of-type(2) {
         }
 
 
-        & > ul {
+        & > div {
             display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+
+            & > form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+                width: 100%;
+
+                & > input {
+                    height: 45px;
+                    border-radius: 10px;
+                    width: 100%;
+                    padding-left: 45px;
+                    font-size: 18px;
+                    background-color: $nav-dark-gray;
+                    color: #FFF;
+                    border: none;
+
+                    @include respond-to(sm) {           
+                        height: 7vw;
+                        border-radius: 2vw;
+                        font-size: 3.5vw;
+                        padding-left: 7vw;
+                    }
+
+                    &::placeholder {
+                        color: #FFF;
+                    }
+                }
+
+                & > button {
+                    position: absolute;
+                    left: 15px;
+
+                    
+                    @include respond-to(sm) {           
+                        left: 2vw;
+                    }
+
+                    & img {
+                        height: 16px;
+                        width: 16px;
+
+                        @include respond-to(sm) {           
+                            height: 3vw;
+                            width: 3vw;
+                        }
+                    }
+
+
+                }
+            
+            }
+
+
+            & > div {
+                width: 100%;
+                margin-top: 20px;
+                position: relative; 
+
+                @include respond-to(sm) {           
+                    margin-top: 2vw;
+                }
+
+                & > ul { 
+                    width: 50%;
+                    border: 2px solid red;
+
+                    @include respond-to(sm) {
+                        width: 100%;
+                    }
+
+
+                    & > li {
+
+                        margin-top: 20px;
+                        
+                        @include respond-to(sm) {           
+                            margin-top: 2vw;
+                        }
+
+                        & > div:nth-of-type(1) {
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            cursor: pointer;
+
+                            & > span {
+                                color: #fff;
+                                transition: $transitionAll;
+                                font-size: 28px;
+                                font-weight: bolder;
+                                letter-spacing: 0.1rem;
+
+                                @include respond-to(sm) {           
+                                    font-size: 8vw;
+                                }
+
+                                & > a {
+                                    font-size: 28px;
+                                    font-weight: bolder;
+                                    letter-spacing: 0.1rem;
+
+                                    @include respond-to(sm) {           
+                                        font-size: 8vw;
+                                    }
+                                }
+                            }
+    
+                            & > img {
+                                height: 9px;
+                                width: 15px;
+                                transform: rotate(-90deg);
+                                transition: 0s;
+
+                                @include respond-to(sm) {
+                                    transform: rotate(0deg);
+                                    width: 4vw;
+                                    height: 2.4vw;
+                                }
+                            }
+                        }
+                        
+
+                        & > :nth-of-type(2) {
+                            display: none;
+                        }
+
+
+                        &.selected {
+
+                            & div:nth-of-type(1) {
+                                & > span {
+                                    color: $nav-blue;
+                                    transition: $transitionAll;
+                                }
+
+                                & > img {
+                                    
+                                    @include respond-to(sm) {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                            
+
+                            & > div:nth-of-type(2) {
+                                display: flex;
+                                border-left: 1px solid $nav-dark-gray;
+                                position: absolute;
+                                top: 0;
+                                left: 50%;
+                                margin-left: 30px;
+                                padding-left: 30px;
+                                display: flex;
+                                flex-direction: column;
+                                color: #FFF;
+
+                                @include respond-to(sm) {
+                                    position: relative;
+                                    left: auto;
+                                    top: auto;
+                                    border-left: none;
+                                    margin-left: 0;
+                                    padding-left: 0;
+                                    border-bottom: 1px solid $nav-dark-gray;
+                                    padding-bottom: 4vw;
+                                }
+
+
+                                & a {
+                                    text-decoration: none;
+                                    transition: $transitionAll;
+                                    font-size: 22px;
+                                    font-weight: 400;
+
+                                    @include respond-to(sm) {
+                                        font-size: 5vw;
+                                    }
+
+
+                                    &:hover {
+                                        text-decoration: underline;
+                                        color: $nav-blue;
+                                        transition: $transitionAll;
+
+                                    }
+                                }
+
+                                & > span {
+                                    margin-top: 25px;
+                                    font-size: 26px;
+                                    text-transform: uppercase;
+                                    
+                                    @include respond-to(sm) {
+                                        font-size: 6vw;
+                                        margin-top: 6vw;
+                                    }
+                                }
+
+                                & > ul > li {
+                                    margin-top: 5px;
+                                }
+
+
+
+                            }
+                        }
+
+
+                    }
+                }
+            }
         }
 
 
