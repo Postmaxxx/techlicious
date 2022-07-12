@@ -4,6 +4,7 @@ header {
     top: 0px;
     z-index: 2000;
     position: relative;
+    //border: 2px solid yellow;
 }
 
 header nav:nth-of-type(1) {
@@ -53,7 +54,7 @@ header nav:nth-of-type(1) {
                 align-items: center;
                 position: relative;
                 cursor: pointer;
-                //border: 3px solid red;
+                //border: 3px solid yellow;
 
 
                 &::after {
@@ -97,12 +98,12 @@ header nav:nth-of-type(1) {
             &.selected {
                 
                 & > div:nth-of-type(2) {
+                    //border: 5px solid green;
                     background-color: #171717;
                     width: 100%;
                     display: block;
-                    position: fixed;
-                    top: 0;
-                    top: 185px;
+                    position: absolute;
+                    top: 87px;
                     left: 0;
                     z-index: 1000;
                     padding: 40px 40px;
